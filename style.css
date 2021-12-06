@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Amatic+SC:wght@700&family=Baumans&family=Dancing+Script&family=Josefin+Slab:wght@100;200&family=Koulen&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Amatic+SC:wght@700&family=Baumans&family=Dancing+Script&family=Josefin+Slab:wght@100;200&family=Koulen&family=Staatliches&family=Yanone+Kaffeesatz&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  height: 2000px;
 }
 
 /*********************** NAVBAR *********************/
@@ -22,7 +23,7 @@ body {
 .logo-nav {
   position: absolute;
   left: 8em;
-  bottom: 0.6em;
+  bottom: 0.5em;
   transition: 0.3s ease-in-out;
 }
 
@@ -32,13 +33,18 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.li-nav {
-  display: inline;
+.flexbox-li {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  top: 0.6em;
-  right: 24em;
-  margin-left: 3em;
-  font-size: 17px;
+  top: 10px;
+  margin-right: 20px;
+  margin-left: 170px;
+}
+
+.li-nav {
+  float: left;
+  display: inline;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -52,13 +58,13 @@ body {
   color: antiquewhite;
 }
 
-.a-nav-jadopte {
+.a-nav-évenement {
   text-decoration: none;
   color: rgba(250, 235, 215, 0.507);
   transition: 0.2s ease-in-out;
 }
 
-.a-nav-jadopte:hover {
+.a-nav-évenement:hover {
   text-decoration: none;
   color: antiquewhite;
   transition: 0.2s ease-in-out;
@@ -72,8 +78,9 @@ body {
   border-radius: 10px;
   border: none;
   font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-  right: 2em;
+  float: right;
+  position: absolute;
+  right: 5%;
   transition: 0.3s ease-in-out;
 }
 
@@ -92,7 +99,7 @@ body {
   color: #fff;
 }
 
-/******************************* BACKGROUND MAIN ************************/
+/******************************* BACKGROUND HEAD ************************/
 
 .bg-head {
   background: url(./media/bg-main.jpg) no-repeat fixed 50% 50%;
@@ -105,7 +112,7 @@ body {
   color: #fff;
   position: relative;
   top: 9.5em;
-  left: 9em;
+  left: 10.5em;
   display: inline-block;
   width: 500px;
   height: 380px;
@@ -139,7 +146,7 @@ body {
   border: none;
   padding: 15px 30px;
   font-weight: bold;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .button-head:hover {
@@ -147,7 +154,7 @@ body {
   color: #fff;
   cursor: pointer;
   background: none;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
   scale: 1.05;
 }
 
@@ -170,3 +177,715 @@ body {
   top: 41.5rem;
   left: 50%;
 }
+
+/************************** CARD MAIN ***************************/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  position: relative;
+  top: 150px;
+}
+
+.couleur-beige {
+  background: beige;
+  height: 600px;
+  margin-bottom: 150px;
+}
+
+/************************* COMPAGNON *****************************/
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  flex-direction: row;
+  margin-top: 8%;
+  justify-content: space-evenly;
+}
+
+.text-place-2 {
+  color: #000;
+  width: 450px;
+  height: 600px;
+}
+
+.title-main {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text-main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-compagnon-main {
+  border-radius: 10px;
+}
+
+/*************************** FLEX MAIN BOUVIER LAPIN CHAT ********************/
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  background: beige;
+}
+
+.title-flex-pets {
+  margin-left: 1em;
+  font-size: 60px;
+  font-family: 'Amatic SC', cursive;
+  transition: 0.4s ease-in-out;
+}
+
+.title-flex-pets:hover {
+  color: orangered;
+  transition: 0.4s ease-in-out;
+}
+
+.text-flex-pets {
+  margin-left: 15px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-container-2 {
+  position: relative;
+  left: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+/**************************** CHAT ************************/
+
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 8%;
+  gap: 150px;
+}
+
+.text-place-3 {
+  width: auto;
+  height: 100px;
+  background: rgba(255, 127, 80, 0.219);
+  border-radius: 20px;
+}
+
+.title-main-2 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 65px;
+}
+
+.text-main-2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/**************************** CHIEN ************************/
+
+.text-place-4 {
+  width: auto;
+  height: 100px;
+  background: rgba(255, 127, 80, 0.219);
+  border-radius: 20px;
+}
+
+.title-main-3 {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 65px;
+}
+
+.text-main-3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/****************************** NOS AIDES *********************/
+
+.container-4 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: beige;
+  padding: 50px;
+}
+
+.lg-title {
+  text-align: center;
+  margin: 150px 0;
+  font-size: 75px;
+  background: rgba(255, 127, 80, 0.219);
+  border-radius: 20px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  font-family: 'Amatic SC', cursive;
+}
+
+.title-flex-pets-2 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  top: 110px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.bg-flex-1 {
+  background: url(./media/soigner-flexbox.jpg) no-repeat 50% 50%;
+  width: 400px;
+  height: 250px;
+  transition: 0.3s ease-in-out;
+}
+
+.bg-flex-1:hover {
+  opacity: 0.9;
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+}
+
+.bg-flex-2 {
+  background: url(./media/Chat-libres-flexbox.jpg) no-repeat 50% 50%;
+  width: 400px;
+  height: 250px;
+  transition: 0.3s ease-in-out;
+}
+
+.bg-flex-2:hover {
+  opacity: 0.9;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-3 {
+  background: url(./media/Particulier-flexbox.jpg) no-repeat 50% 50%;
+  width: 400px;
+  height: 250px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-3:hover {
+  opacity: 0.9;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+/************************************ TITLE FOOTER (1) **********************/
+
+.title-footer {
+  text-align: center;
+  margin: 100px 0;
+  background: rgba(255, 127, 80, 0.219);
+  border-radius: 20px;
+  width: 25%;
+  position: relative;
+  left: 38.5%;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+}
+
+/************************************ ICONS ***********************************/
+
+.container-5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 110px;
+  margin-bottom: 5%;
+}
+
+/************************************ BG FOOTER *******************************/
+
+.bg-footer {
+  background: url(./media/bg-footer.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 360px;
+}
+
+.text-place-5 {
+  position: relative;
+  top: 35%;
+  text-align: center;
+  font-size: x-large;
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+}
+
+.button-footer {
+  position: relative;
+  top: 35px;
+  margin-left: 20px;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.4s ease-in-out;
+}
+
+.button-footer:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  transition: 0.4s ease-in-out;
+  scale: 1.05;
+}
+
+.a-button-footer {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+
+.a-button-footer:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+/************************************ FOOTER FINALE ***********************/
+
+.copyright {
+  font-size: 16px;
+  float: left;
+  position: relative;
+  top: 40%;
+  left: 5%;
+}
+
+.footer-finale {
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+}
+
+.logo-footer {
+  float: right;
+  width: auto;
+  height: 50px;
+  position: relative;
+  top: 30%;
+  right: 5%;
+}
+
+/********************************* MEDIA QUERIES TABLET ET BREAK POINT *********************/
+
+/********************************** BREAK POINT NAV ****************************************/
+
+@media only screen and (max-width : 994px) {
+  .button-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  .li-nav {
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    margin-left: 30px;
+  }
+}
+
+/************************ FIN BREAK POINT NAV ****************/
+
+@media only screen and (max-width : 768px) {
+
+  /*NAVBAR*/
+
+  .logo-nav {
+    position: absolute;
+    left: 2em;
+    bottom: 0.6em;
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+  }
+
+  .logo-nav:hover {
+    scale: 0.8;
+    filter: blur(0.6px);
+    transition: 0.3s ease-in-out;
+  }
+
+  .li-nav {
+    position: relative;
+    bottom: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /*BG HEAD*/
+  
+  .text-place{
+    color: #fff;
+    position: relative;
+    top: 9.5em;
+    left: 3em;
+    display: inline-block;
+    width: 450px;
+    height: 380px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(110, 138, 153) 21%, 
+    rgba(110, 138, 153, 0) 100%) repeat scroll 0% 0%;
+    border-radius: 20px;
+  }
+  
+  .title-head {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+  }
+  
+  .text-head {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+  }
+
+  .button-head {
+    position: relative;
+    top: 45px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .button-head:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    transition: 0.4s ease-in-out;
+    scale: 1.05;
+  }
+
+  /*ICON SUITE*/
+
+  .icon-suite {
+    position: absolute;
+    top: 41.5rem;
+    left: 47%;
+  }
+
+  /*CARDS*/
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    position: relative;
+    top: 150px;
+  }
+  
+  .couleur-beige {
+    background: beige;
+    height: 1000px;
+    margin-bottom: 150px;
+  }
+  
+  /*COMPAGNON*/
+
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: row;
+    margin-top: -8%;
+    justify-content: space-evenly;
+  }
+  
+  .text-place-2 {
+    color: #000;
+    position: relative;
+    top: 90px;
+    width: 450px;
+    height: 600px;
+  }
+  
+  .title-main {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .text-main {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .img-compagnon-main {
+    border-radius: 10px;
+    position: relative;
+    width: auto;
+    height: 400px;
+    top: -200px;
+  }
+
+  /*FLEX MAIN BOUVIER LAPIN CHAT*/
+
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 100px;
+    background: beige;
+  }
+  
+  /*CHAT RIEN A CHANGER*/
+
+  /*CHIEN RIEN A CHENGER*/
+
+  /*NOS AIDES*/
+
+  .container-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: beige;
+    padding: 70px;
+    gap: 50px;
+  }
+
+  .lg-title {
+    font-size: 60px;
+  }
+
+  .bg-flex-1 {
+    background: url(./media/soigner-flexbox.jpg) no-repeat 50% 50%;
+    width: 400px;
+    height: 250px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .bg-flex-2 {
+    background: url(./media/Chat-libres-flexbox.jpg) no-repeat 50% 50%;
+    width: 380px;
+    height: 250px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .bg-flex-3 {
+    background: url(./media/Particulier-flexbox.jpg) no-repeat 50% 50%;
+    width: 380px;
+    height: 250px;
+    transition: 0.5s ease-in-out;
+  }
+
+  /*TITLE FOOTER (1)*/
+
+  .title-footer {
+    position: relative;
+    margin-left: -2em;
+    width: 50%;
+  }
+
+  /*ICONS*/
+
+  .container-5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 110px;
+    margin-bottom: 7%;
+  }
+
+  /*BG FOOTER, FOOTER FINALE RIEN A CHANGER - FIN DU MODE TABLET*/
+
+}
+
+/********************************* MEDIA QUERIES PHONE ***********************/
+
+@media only screen and (max-width : 320px) {
+
+  /*NAVBAR*/
+
+  .flexbox-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .li-nav-2 {
+    position: absolute;
+    top: 1px;
+  }
+
+  .icon-nav-chien {
+    display: none;
+  }
+
+  .icon-nav-house {
+    display: none;
+  }
+
+  /*BG HEAD*/
+  
+  .text-place{
+    color: #fff;
+    position: relative;
+    top: 9.5em;
+    left: 2em;
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(110, 138, 153) 21%, 
+    rgba(110, 138, 153, 0) 100%) repeat scroll 0% 0%;
+    border-radius: 20px;
+  }
+  
+  .title-head {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+  }
+  
+  .text-head {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: bolder;
+  }
+  
+  .button-head {
+    position: relative;
+    top: 35px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 5px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  
+  /*ICON SUITE*/
+
+  .icon-suite {
+    position: absolute;
+    top: 41.5rem;
+    left: 42%;
+  }
+
+  /*CARDS*/
+
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+    background: beige;
+  }
+
+  .couleur-beige {
+    background: beige;
+    height: 1300px;
+    margin-bottom: 150px;
+  }
+
+  /*COMPAGNONS*/
+
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .text-place-2 {
+    color: #000;
+    position: relative;
+    top: 45px;
+    width: 450px;
+    height: 600px;
+  }
+  
+  .title-main {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .text-main {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .img-compagnon-main {
+    border-radius: 40px;
+    position: relative;
+    width: auto;
+    height: 300px;
+    top: -200px;
+  }
+
+  /*FLEX MAIN BOUVIER LAPIN CHAT*/
+
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 110px;
+    background: beige;
+  }
+
+  .title-flex-pets {
+    margin-left: 1em;
+    font-size: 60px;
+    font-family: 'Amatic SC', cursive;
+    transition: 0.4s ease-in-out;
+  }
+
+  /**/
+
+/********************************* FIN *******************************/
