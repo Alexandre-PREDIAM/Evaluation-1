@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Amatic+SC:wght@700&family=Baumans&family=Dancing+Script&family=Josefin+Slab:wght@100;200&family=Koulen&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Amatic+SC:wght@700&family=Baumans&family=Dancing+Script&family=Josefin+Slab:wght@100;200&family=Koulen&family=Staatliches&family=Yanone+Kaffeesatz&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+}
+
+/*********************** NAVBAR *********************/
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.logo-nav {
+  position: absolute;
+  left: 8em;
+  bottom: 0.5em;
+  transition: 0.3s ease-in-out;
+}
+
+.logo-nav:hover {
+  scale: 0.9;
+  filter: blur(0.6px);
+  transition: 0.3s ease-in-out;
+}
+
+.flexbox-li {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 10px;
+  margin-right: 20px;
+  margin-left: 170px;
+}
+
+.li-nav {
+  float: left;
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.a-nav-accueil {
+  text-decoration: none;
+  color: rgba(250, 235, 215, 0.507);
+}
+
+.a-nav-accueil:hover {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.a-nav-evenement {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: 0.2s ease-in-out;
+}
+
+.a-nav-evenement:hover {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: 0.2s ease-in-out;
+}
+
+.button-nav {
+  padding: 7px 20px;
+  background: rgb(255, 136, 0);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+  position: absolute;
+  right: 5%;
+  transition: 0.3s ease-in-out;
+}
+
+.button-nav:hover {
+  background: rgb(255, 60, 0);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.a-nav-button {
+  color: #fff;
+}
+
+.a-nav-button:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/******************************* BACKGROUND HEAD ************************/
+
+.bg-head {
+  background: url(./media-2/bg-head.jpg) no-repeat fixed 50% 50%;
+  width: 100%;
+  height: 799px;
+  background-size: cover;
+}
+
+.text-place{
+  color: #fff;
+  position: relative;
+  top: 14em;
+  left: 27em;
+  text-align: center;
+  display: inline-block;
+  width: 600px;
+  height: 380px;
+}
+
+.title-head {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  left: 10px;
+  text-shadow: 3px 3px 2px black;
+}
+
+.premier-trait {
+  height: 3px;
+  width: 70%;
+  background-color: #fff;
+  position: relative;
+  left: 17%;
+  margin-top: 5%;
+  box-shadow: 3px 3px 2px black;
+}
+
+.text-head {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px black;
+}
+
+.button-head {
+  position: relative;
+  top: 35px;
+  margin-left: 20px;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 30px;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+.button-head:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  transition: 0.4s ease-in-out;
+  scale: 1.05;
+}
+
+.a-head {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+
+.a-head:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+/********************* TITLE MAIN **********************/
+
+.title-main {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 70px;
+  color: #000;
+  font-family: 'Amatic SC', cursive;
+  transition: 1s ease-in-out;
+}
+
+/********************* ÉVÉNEMENTS **********************/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px;
+  row-gap: 100px;
+  column-gap: 50px;
+}
+
+.title-flex-pets-event {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  top: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+  'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 3px 3px 2px black;
+}
+
+.text-flex-pets-event {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  left: 15px;
+  text-shadow: 3px 3px 2px black;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: orange;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.bg-flex-1 {
+  background: url(./media-2/img-1-flex.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-1:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-2 {
+  background: url(./media-2/img-2-flex.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-2:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-3 {
+  background: url(./media-2/img-3-flex.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-3:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-4 {
+  background: url(./media-2/img-4-flex.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-4:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-5 {
+  background: url(./media-2/img-5-flex.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-5:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-6 {
+  background: url(./media-2/img-6-flex.webp) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-6:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-7 {
+  background: url(./media-2/img-7-flex.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-7:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-8 {
+  background: url(./media-2/img-8-flex.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.bg-flex-8:hover {
+  opacity: 0.7;
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
+/**************************** FOOTER ***********************/
+
+.copyright {
+  font-size: 16px;
+  float: left;
+  position: relative;
+  top: 40%;
+  left: 5%;
+}
+
+.footer {
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+}
+
+.logo-footer {
+  float: right;
+  width: auto;
+  height: 50px;
+  position: relative;
+  top: 30%;
+  right: 5%;
+}
+
+/********************************* MEDIA QUERIES TABLET ET BREAK POINT *********************/
+
+/********************************** BREAK POINT NAV ****************************************/
+
+@media only screen and (max-width : 994px) {
+  .button-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  .li-nav {
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    margin-left: 30px;
+  }
+}
+
+/************************ FIN BREAK POINT NAV ****************/
+
+@media only screen and (max-width : 768px) {
+
+  /*NAVBAR*/
+
+  .logo-nav {
+    position: absolute;
+    left: 2em;
+    bottom: 0.6em;
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+  }
+
+  .logo-nav:hover {
+    scale: 0.8;
+    filter: blur(0.6px);
+    transition: 0.3s ease-in-out;
+  }
+
+  .li-nav {
+    position: relative;
+    bottom: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /*BG HEAD*/
+
+  .text-place{
+    color: #fff;
+    position: relative;
+    top: 14em;
+    left: 5em;
+  }
+
+  /*TITLE MAIN*/
+
+  .title-main {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 55px;
+    color: #000;
+    font-family: 'Amatic SC', cursive;
+    transition: 1s ease-in-out;
+  }
+  
+  /*FIN MEDIA QUERIES TABLET*/
+
+}
+
+/********************************* MEDIA QUERIES PHONE ***********************/
+
+@media only screen and (max-width : 320px) {
+
+  /*NAVBAR*/
+
+  .flexbox-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .li-nav-2 {
+    position: absolute;
+    top: 1px;
+  }
+
+  .icon-nav-chien {
+    display: none;
+  }
+
+  .icon-nav-house {
+    display: none;
+  }
+
+  /*BG HEAD*/
+
+  .bg-head {
+    background: url(./media-2/bg-head.jpg) no-repeat fixed 50% 50%;
+    width: 100%;
+    height: 560px;
+    background-size: cover;
+  }
+
+  .text-place{
+    color: #fff;
+    position: relative;
+    top: 10em;
+    left: 3.5em;
+    margin-right: 420px;
+    width: 200px;
+    height: 300px;
+  }
+  
+  .title-head {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    left: 10px;
+    text-shadow: 3px 3px 2px black;
+  }
+  
+  .premier-trait {
+    height: 1.5px;
+    width: 70%;
+    background-color: #fff;
+    position: relative;
+    left: 20%;
+    margin-top: 10%;
+    box-shadow: 3px 3px 2px black;
+  }
+  
+  .text-head {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px black;
+  }
+  
+  /*TITLE MAIN*/
+
+  .title-main {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 45px;
+    color: #000;
+    font-family: 'Amatic SC', cursive;
+    transition: 1s ease-in-out;
+  }
+  
+  /*ÉVÉNEMENTS*/
+
+  .title-flex-pets-event {
+    font-size: 22px;
+  }
+  
+  .text-flex-pets-event {
+    width: 35%;
+  }
+
+  /*FOOTER*/
+
+  .copyright {
+    font-size: 15px;
+    float: left;
+    position: relative;
+    top: 40%;
+    left: 5%;
+  }
+
+  .logo-footer {
+    float: right;
+    width: auto;
+    height: 40px;
+    position: relative;
+    top: 30%;
+    right: 5%;
+  }
+
+  /*FIN MEDIA QUERIES PHONE*/
+
+}
+
+/* ************************************* FIN ****************************** */
