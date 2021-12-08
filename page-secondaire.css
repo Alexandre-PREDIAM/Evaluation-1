@@ -102,6 +102,12 @@ body {
 
 /******************************* BACKGROUND HEAD ************************/
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .bg-head {
   background: url(./media-2/bg-head.jpg) no-repeat fixed 50% 50%;
   width: 100%;
@@ -109,15 +115,14 @@ body {
   background-size: cover;
 }
 
-.text-place{
+.text-place {
   color: #fff;
-  position: relative;
-  top: 14em;
-  left: 27em;
   text-align: center;
   display: inline-block;
   width: 600px;
   height: 380px;
+  position: relative;
+  top: 15em;
 }
 
 .title-head {
@@ -195,13 +200,13 @@ body {
 
 /********************* ÉVÉNEMENTS **********************/
 
-.container {
+.container-1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 50px;
-  row-gap: 100px;
+  padding: 100px;
+  row-gap: 120px;
   column-gap: 50px;
 }
 
@@ -381,7 +386,7 @@ body {
 
 /********************************* MEDIA QUERIES TABLET ET BREAK POINT *********************/
 
-/********************************** BREAK POINT NAV ****************************************/
+/********************************** BREAK POINT NAV ET TEXTE PLACE ****************************************/
 
 @media only screen and (max-width : 994px) {
   .button-nav {
@@ -426,15 +431,6 @@ body {
     margin-top: 10px;
   }
 
-  /*BG HEAD*/
-
-  .text-place{
-    color: #fff;
-    position: relative;
-    top: 14em;
-    left: 5em;
-  }
-
   /*TITLE MAIN*/
 
   .title-main {
@@ -448,6 +444,32 @@ body {
   
   /*FIN MEDIA QUERIES TABLET*/
 
+}
+
+/********************************* BREAK POINT *******************************/
+
+/*ÉVÉNEMENTS*/
+
+@media only screen and (max-width : 500px) {
+
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 120px;
+    column-gap: 50px;
+  }
+
+  .title-flex-pets-event {
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .text-flex-pets-event {
+    width: 45%;
+  }
 }
 
 /********************************* MEDIA QUERIES PHONE ***********************/
@@ -486,19 +508,14 @@ body {
     background-size: cover;
   }
 
-  .text-place{
-    color: #fff;
+  .text-place {
     position: relative;
-    top: 10em;
-    left: 3.5em;
-    margin-right: 420px;
-    width: 200px;
-    height: 300px;
+    right: 13px;
   }
-  
+
   .title-head {
     font-family: 'Amatic SC', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 2px;
     position: relative;
@@ -539,12 +556,23 @@ body {
   
   /*ÉVÉNEMENTS*/
 
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 120px;
+    column-gap: 50px;
+    position: relative;
+  }
+
   .title-flex-pets-event {
-    font-size: 22px;
+    font-size: 12px;
+    position: relative;
   }
   
   .text-flex-pets-event {
-    width: 35%;
+    width: 85%;
   }
 
   /*FOOTER*/

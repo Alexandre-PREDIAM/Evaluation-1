@@ -178,7 +178,7 @@ body {
   left: 50%;
 }
 
-/************************** CARD MAIN ***************************/
+/************************** CARDS MAIN ***************************/
 
 .container {
   display: flex;
@@ -196,6 +196,10 @@ body {
   background: beige;
   height: 600px;
   margin-bottom: 150px;
+}
+
+.card {
+  width: 17rem;
 }
 
 /************************* COMPAGNON *****************************/
@@ -739,6 +743,97 @@ body {
 
 }
 
+/********************************* BREAK POINT TEXTE PLACE HEAD **************/
+
+@media only screen and (max-width : 500px) {
+
+  .text-place {
+    color: #fff;
+    position: relative;
+    top: 9.5em;
+    left: 1em;
+    display: inline-block;
+    width: 400px;
+    height: 380px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(110, 138, 153) 21%, 
+    rgba(110, 138, 153, 0) 100%) repeat scroll 0% 0%;
+    border-radius: 20px;
+  }
+
+  .button-head {
+    position: relative;
+    top: 1em;
+    left: -10px;
+    padding: 5px 5px;
+  }
+
+}
+/********************************* BREAK POINT CARDS *************************/
+
+@media only screen and (max-width : 1200px) { 
+  
+  .card {
+    width: 17rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    position: relative;
+    top: 150px;
+  }
+  
+  .couleur-beige {
+    background: beige;
+    height: 1050px;
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (max-width : 800px) { 
+  
+  .card {
+    width: 12rem;
+  }
+
+  .couleur-beige {
+    background: beige;
+    height: 1350px;
+    margin-bottom: 150px;
+  }  
+}
+
+/********************************* BREAK POINT COMPAGNON *********************/
+
+@media only screen and (max-width : 1200px) {
+  
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .text-place-2 {
+    color: #000;
+    position: relative;
+    top: 45px;
+    width: 450px;
+    height: 600px;
+  }
+
+  .img-compagnon-main {
+    position: relative;
+    bottom: 300px;
+  }
+}
+
 /********************************* MEDIA QUERIES PHONE ***********************/
 
 @media only screen and (max-width : 320px) {
@@ -1030,4 +1125,5 @@ body {
     right: 5%;
   }
 }
+
 /* ******************************** FIN ****************************** */
